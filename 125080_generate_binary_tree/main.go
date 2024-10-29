@@ -47,8 +47,8 @@ func inOrderTraversal(node *TreeNode) {
 		return
 	}
 
-	fmt.Printf("%d ", node.Val)
 	inOrderTraversal(node.Left)
+	fmt.Printf("%d ", node.Val)
 	inOrderTraversal(node.Right)
 }
 
